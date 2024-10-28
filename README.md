@@ -33,3 +33,4 @@ To run:
 - `res` folder copied into the build directory
 - `src` folder for source files
 - `include` folder for header files
+  - `include/your_project` folder for your project headers. Change this to your project name + also change in `include/CMakeLists.txt`
