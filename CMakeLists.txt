@@ -24,15 +24,16 @@ set(CMAKE_MACOSX_RPATH ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror")
 
 # defines
-set(VERSION_MAJOR "1")
-set(VERSION_MINOR "0")
-set(VERSION_PATCH "4")
+set(VERSION_MAJOR "0")
+set(VERSION_MINOR "1")
+set(VERSION_PATCH "0")
 set(VERSION ${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH})
 set(RES_PATH "${CMAKE_BINARY_DIR}/res")
 
 option(BUILD_TESTS "Build tests" OFF)
 
 add_subdirectory(src)
+add_subdirectory(include)
 add_subdirectory(res)
 
 # testing
